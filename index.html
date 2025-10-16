@@ -1,0 +1,165 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Shorts — Player</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1149890887053978');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1149890887053978&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  :root{
+    --bg:#0b0b0b;
+    --panel:#0f0f0f;
+    --muted:#a0a5ad;
+    --accent:#ff0033;
+    --rounded:16px;
+    --phone-w:420px;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:#fff;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    display:flex; align-items:flex-start; justify-content:center;
+    min-height:100svh; padding:18px;
+  }
+
+  .phone{
+    width:100%; max-width:var(--phone-w);
+    background:linear-gradient(180deg,#0b0b0b,#090909);
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:28px; overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.03);
+  }
+
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    height:52px; padding:0 14px; border-bottom:1px solid rgba(255,255,255,.05);
+    background:rgba(0,0,0,.35); backdrop-filter: blur(6px);
+  }
+  .badge{
+    font-weight:700; letter-spacing:.2px; font-size:14px;
+    background:#1a1a1a; padding:6px 10px; border-radius:999px; color:#fff;
+    border:1px solid rgba(255,255,255,.06);
+  }
+  #app-logo{height:18px; opacity:.95}
+
+  .stage{position:relative; width:100%; background:#000; padding-top:177.7777%;}
+  .video-embed{position:absolute; inset:0; display:flex; align-items:center; justify-content:center;}
+  .caption{
+    position:absolute; left:12px; right:72px; top:10px;
+    font-size:18px; font-weight:800; line-height:1.25;
+    text-shadow:0 2px 8px rgba(0,0,0,.55);
+  }
+
+  .cta{ display:none; padding:16px; }
+  .cta a{
+    display:block; text-align:center; text-decoration:none; color:#fff; font-weight:900;
+    padding:16px 20px; border-radius:999px;
+    background:linear-gradient(90deg,#ff2d55,#ff7a00);
+    box-shadow:0 14px 28px rgba(255,78,0,.25);
+    font-size:18px;
+    animation:pulse 1.5s infinite;
+  }
+  @keyframes pulse {
+    0%{transform:scale(1);}
+    50%{transform:scale(1.06);}
+    100%{transform:scale(1);}
+  }
+
+  .footer{
+    padding:12px 14px 16px; display:flex; align-items:center; gap:12px;
+    border-top:1px solid rgba(255,255,255,.06); background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.25));
+  }
+  .avatar{width:40px; height:40px; border-radius:50%; overflow:hidden; border:2px solid rgba(255,255,255,.08)}
+  .meta{flex:1; min-width:0}
+  .channel{font-weight:800; font-size:14px}
+  .desc{color:var(--muted); font-size:12px; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .btn-sub{
+    background:var(--accent); color:#fff; border:0; font-weight:800;
+    padding:10px 14px; border-radius:999px; cursor:pointer;
+  }
+
+  @media (max-width:480px){
+    .caption{font-size:16px}
+  }
+</style>
+</head>
+
+<body>
+  <div class="phone">
+    <div class="topbar">
+      <div class="left">
+        <span class="badge">Shorts</span>
+      </div>
+      <div class="right">
+        <img id="app-logo" src="https://i.imgur.com/7TSEVU2.png" alt="logo">
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="video-embed">
+        <!-- ✅ NOVA VSL ConverteAi -->
+        <script type="text/javascript">
+          var s=document.createElement("script");
+          s.src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js";
+          s.async=!0; document.head.appendChild(s);
+        </script>
+        <div id="ifr_68f042bf81e93bf7cd4888b8_wrapper" style="margin: 0 auto; width: 100%; max-width: 400px;">
+          <div style="position: relative; padding: 178.21782178217822% 0 0 0;" id="ifr_68f042bf81e93bf7cd4888b8_aspect">
+            <iframe frameborder="0" allowfullscreen src="about:blank" id="ifr_68f042bf81e93bf7cd4888b8"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+              referrerpolicy="origin"
+              onload="this.onload=null; this.src='https://scripts.converteai.net/e7533fda-d52e-4074-995b-16067ce42d65/players/68f042bf81e93bf7cd4888b8/v4/embed.html' + (location.search||'?') + '&vl=' + encodeURIComponent(location.href)">
+            </iframe>
+          </div>
+        </div>
+        <!-- ✅ FIM NOVA VSL -->
+      </div>
+
+      <div class="caption">“Este truco merece aplausos 👏🔥”</div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta" id="cta">
+      <a href="https://inlead.digital/mounjaro-de-los-pobres">
+        👉 QUIERO LA RECETA AHORA 👈
+      </a>
+    </div>
+
+    <div class="footer">
+      <div class="avatar">
+        <img src="https://i.pravatar.cc/80?img=32" alt="Canal Icono" style="width:100%;height:100%;object-fit:cover">
+      </div>
+      <div class="meta">
+        <div class="channel">Receta Mounjaro™</div>
+        <div class="desc">TRANSFORMACIÓN REAL · #salud #shorts</div>
+      </div>
+      <button class="btn-sub" type="button">Suscribirse</button>
+    </div>
+  </div>
+
+  <script>
+    // Revela CTA após 180 segundos (3 minutos)
+    setTimeout(()=>{
+      document.getElementById('cta').style.display='block';
+    }, 180000);
+  </script>
+</body>
+</html>
